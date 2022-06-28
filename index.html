@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Bootstrap/css/style.css">
+    <title>My Document</title>
+</head>
+<body>
+    <div class="navigation">
+        <div class="banner">
+            <img src="./image/cover.jpg" class="cover">
+        </div>
+        <div class="navLink">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Protfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="sec">
+        <header>
+            <div class="toggle"></div>
+                <a href="#" class="btn">Hire Me</a>
+        </header>
+        <div class="imgBx">
+            <img src="./image/profile2.jpg" class="cover">
+        </div>
+        <div class="content">
+            <h2>Hi, I am<br><span>MOHAIMENUR RAHMAN</span></h2>
+            <P>I'm an engineering student and was done my major in Software Engineering at AIUB. I’m looking to collaborate on Software Engineering, Web Development and Graphics.</P>
+            <a href="#" class="btn">Download My CV</a>
+        </div>
+        <footer>
+            <ul class="sci">
+                <li><a href="https://www.facebook.com/Efaaaj"><img src="./image/facebook (1).png" alt=""></a></li>
+                <li><a href="https://twitter.com/efajrahman"><img src="./image/twitter (1).png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/efaaaj/"><img src="./image/instagram (1).png" alt=""></a></li>
+            </ul>
+           <p class="copyrightText">@2022 Mohaimenur Rahman</p>
+        </footer>
+
+    </section>
+
+   
+    <script>
+        let menuToggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let sec = document.querySelector('.sec');
+        menuToggle.onclick=function(){
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+            sec.classList.toggle('active')
+        }
+
+    </script>
+    
+</body>
+</html>

@@ -186,7 +186,7 @@ footer{
 
 
 .sidebar ul{
-    position: relative;
+    position: static;
     padding: 20px;
     width: 300px;
     background: #fff;
@@ -315,6 +315,6 @@ footer{
         left: -120px;
     }
     .sidebar{
-        width: 60%;
+        width: 100%;
     }
 }

@@ -7,7 +7,10 @@
     .home-center p {
         font-size: 18px;
     }
-
+    .card{
+        margin-top: 20px;
+    }
+    
 
 }
 /* medium device */
@@ -16,5 +19,6 @@
         font-size: 65px;
         
     }
+   
 
 }

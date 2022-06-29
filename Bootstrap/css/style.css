@@ -8,7 +8,7 @@
 body{
     overflow-x: hidden;
 }
-.navigation
+.sidebar
 {
     position: fixed;
     top: 0;
@@ -21,7 +21,7 @@ body{
     align-items: center;
     transition: 1s;
 }
-.navigation.active{
+.sidebar.active{
     left: 0;
 
 }

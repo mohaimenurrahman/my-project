@@ -186,7 +186,7 @@ footer{
 
 
 .sidebar ul{
-    position: static;
+    position: relative;
     padding: 20px;
     width: 300px;
     background: #fff;

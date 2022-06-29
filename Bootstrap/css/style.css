@@ -275,12 +275,6 @@ footer{
 }
 
 
-
-
-
-
-
-
 @media(max-width: 991px){
     .sec{
         padding: 40px;
@@ -313,6 +307,9 @@ footer{
     }
     .toggle.active{
         left: -120px;
+    }
+    .sidebar{
+        margin-left: 0;
     }
    
 }

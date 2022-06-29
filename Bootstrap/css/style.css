@@ -308,4 +308,7 @@ footer{
     .toggle.active{
         left: -120px;
     }
+    .sidebar{
+        width: 100%;
+    }
 }

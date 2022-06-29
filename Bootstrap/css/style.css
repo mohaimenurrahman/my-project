@@ -177,6 +177,12 @@ footer{
     color: #777;
     letter-spacing: 1px;
 }
+.copyright .copyrightText{
+    font-weight: 500;
+    color: #777;
+    letter-spacing: 1px;
+    justify-content:center ;
+}
 
 
 .sidebar ul{
@@ -309,6 +315,6 @@ footer{
         left: -120px;
     }
     .sidebar{
-        width: 100%;
+        width: 60%;
     }
 }

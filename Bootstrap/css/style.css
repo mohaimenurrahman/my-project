@@ -306,7 +306,7 @@ footer{
         align-items: flex-start;
     }
     .sec .content h2 span{
-        font-size: 1em;
+        font-size: 1.9em;
     }
     .banner{
        display: none; 
@@ -314,7 +314,5 @@ footer{
     .toggle.active{
         left: -120px;
     }
-    .sidebar{
-        width: 100%;
-    }
+   
 }

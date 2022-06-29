@@ -54,7 +54,7 @@ html{
     border: 2px solid white ;
     color: white;
     font-size: 20px;
-    padding: 5px 10px ;
+    padding: 4px 7px ;
 }
 .home-btn .btn-shop:hover{
     color: blue;
@@ -65,7 +65,7 @@ html{
     color: black;
     background: white;
     font-size: 20px;
-    padding: 5px 10px ;
+    padding: 4px 7px;
 }
 .home-btn .btn-member:hover{
     color:yellowgreen;

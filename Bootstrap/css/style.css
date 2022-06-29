@@ -27,7 +27,7 @@ body{
 }
 .banner{
     position: relative;
-    width: 50%;
+    width: 80%;
     height: 100%;
 }
 .cover{
@@ -38,37 +38,7 @@ body{
     height: 100%;
     object-fit: cover;
 }
-.navLink{
-    position: relative;
-    width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-.navLink ul {
-    position: relative;
-    width: 100%;
-}
-.navLink ul li {
-    position: relative;
-    list-style: none;
-}
-.navLink ul li a {
-    position: relative;
-    color: #fff;
-    font-size: 1.3em;
-    font-weight: 500;
-    text-decoration: none;
-    margin: 5px 0;
-    margin-left: 100px;
-    display: inline-block;
-    letter-spacing: 1px;
-    text-transform: uppercase ;
-   
-}
-.navLink ul li a:hover {
-    color: rgb(21, 21, 250);
-}
+
 .sec{
     position: relative;
     left: 0;
@@ -208,6 +178,103 @@ footer{
     letter-spacing: 1px;
 }
 
+
+.sidebar ul{
+    position: relative;
+    padding: 20px;
+    width: 300px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.sidebar ul li{
+    position: relative;
+    list-style: none;
+}
+.sidebar ul li::before{
+    content: '';
+    position: absolute;
+    top: 26px;
+    right: 10px;
+    width: 10px;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.sidebar ul li:hover::before{
+    background:#188aff ;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    display: flex;
+}
+.sidebar ul li a .icon{
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    margin: 10px;
+    overflow: hidden;
+}
+.sidebar ul li a .icon .fa{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+    color: #333;
+    transition: 0.5s;
+}
+
+.sidebar ul li a .icon .fa:last-child{
+    color: #188aff;
+}
+.sidebar ul li a:hover .icon .fa{
+    transform:translateY(-100%);
+}
+.sidebar ul li a:hover .icon .fa:last-child{
+    transform:translateY(-100%);
+}
+.sidebar ul li a .name{
+    position: relative;
+    top: 20px;
+    height: 20px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    
+}
+.sidebar ul li a .name span {
+    display: block;
+    position: relative;
+    color: #333 ;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    transition: 0.5s;
+}
+.sidebar ul li a .name span::before{
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #188aff;
+}
+.sidebar ul li a:hover .name span{
+    transform: translateY(20px);
+}
+
+
+
+
+
+
+
+
 @media(max-width: 991px){
     .sec{
         padding: 40px;
@@ -232,21 +299,13 @@ footer{
         flex-direction: column;
         align-items: flex-start;
     }
-
     .sec .content h2 span{
-        font-size: 1.4em;
+        font-size: 2em;
     }
     .banner{
        display: none; 
     }
-    .navLink{
-        width: 100%;
-    }
     .toggle.active{
         left: -120px;
-    }
-    .navLink ul li a{
-        font-size: 1.5em;
-        margin-left:50px ;
     }
 }

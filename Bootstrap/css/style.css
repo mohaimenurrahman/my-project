@@ -135,19 +135,19 @@ header{
     max-width: 700px;
     margin-left: 40px;
 }
-/* .sec .content h2{
+.sec .content h2{
     font-weight: 500;
     letter-spacing: 1px;
     color: #777;
     line-height: 2.0em;
-} */
-/* .sec .content h2 span{
+}
+.sec .content h2 span{
     font-weight: 700;
     color: #2196f3;
     font-size: 1.7em;
-} */
+}
 
-.sec .content h2 span{
+/* .sec .content h2 span{
     position: relative;
     font-size: 4vw;
     color: #252839;
@@ -175,7 +175,7 @@ header{
     70%,90%{
         width: 100%;
     }
-}
+} */
 
 
 

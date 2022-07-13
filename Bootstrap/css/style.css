@@ -135,17 +135,51 @@ header{
     max-width: 700px;
     margin-left: 40px;
 }
-.sec .content h2{
+/* .sec .content h2{
     font-weight: 500;
     letter-spacing: 1px;
     color: #777;
     line-height: 2.0em;
-}
-.sec .content h2 span{
+} */
+/* .sec .content h2 span{
     font-weight: 700;
     color: #2196f3;
     font-size: 1.7em;
+} */
+
+.sec .content h2 span{
+    position: relative;
+    font-size: 4vw;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+    text-transform: uppercase;
 }
+
+.sec .content h2 span::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 6px;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #2196f3;
+    -webkit-text-stroke: 0.1vw  #383d52;
+    border-right: 1px solid #2196f3;
+    overflow: hidden;
+    animation: animate 7s linear infinite;
+}
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100%;
+    }
+}
+
+
+
+
 .sec .content p{
     color: #777;
     font-size: 1.2em;
